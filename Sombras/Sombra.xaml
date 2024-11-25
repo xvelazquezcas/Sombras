@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sh="clr-namespace:Sharpnado.Shades;assembly=Sharpnado.Shadows"
+             x:Class="Sombras.Sombra">
+    <Grid>
+        <StackLayout Spacing="20" Orientation="Vertical" VerticalOptions="Center">
+            <sh:Shadows CornerRadius="50" Shades="{sh:SingleShade Offset='15 , 10', Opacity=0.4, Color=Black}">
+                <ImageButton WidthRequest="100" HeightRequest="100" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Pink" CornerRadius="50"
+                   Source="https://i.ibb.co/mHPmg2K/images.png" Padding="10"/>
+            </sh:Shadows>
+            <sh:Shadows CornerRadius="15" Shades="{sh:SingleShade Offset='15 , 10', Opacity=0.4, Color=Red}">
+                <Frame WidthRequest="60" HeightRequest="50" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Red" CornerRadius="15">
+                    <Image Source="https://i.ibb.co/rvmVNPH/Tata-1.png" WidthRequest="400" HeightRequest="260"/>
+                </Frame>    
+            </sh:Shadows>
+            <sh:Shadows CornerRadius="10" Shades="{sh:SingleShade Offset='15 , 10', Opacity=0.4, Color=Gray}">
+                <BoxView WidthRequest="60" HeightRequest="50" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Black" CornerRadius="10"/>
+            </sh:Shadows>
+        </StackLayout>
+    </Grid>
+</ContentPage>
